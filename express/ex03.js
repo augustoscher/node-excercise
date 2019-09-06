@@ -1,13 +1,14 @@
 const express = require('express');
 const server = express();
 
-server.get('/', (req, res, next) => {
+//passa sempre por estes metodos na cadeia de execução
+server.use((req, res, next) => {
   console.log('inicio');
   next();
   console.log('fim');
 });
 
-server.get('/', (req, res) => {
+server.use((req, res) => {
   console.log('Resposta...');
   res.send('<h1>Olá express</h1>');
 });
