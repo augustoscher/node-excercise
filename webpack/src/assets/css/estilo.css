@@ -1,3 +1,7 @@
 body {
   background-color: rgb(0, 119, 255);
+  background-image: url('../img/logo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
