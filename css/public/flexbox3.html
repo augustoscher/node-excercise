@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Flexbox2</title>
+  <title>Flexbox3</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" href="../src/assets/css/tag.css">
   <style>
@@ -15,22 +15,12 @@
 
     .flex-container {
       display: flex;
-      height: 300px;
-      width: 300px;
-      flex-shrink: 1;
+      flex-direction: column;
     }
 
     .flex-container div {
 			box-sizing: border-box;
-      width: 100px;
-      /* flex-grow: 1; */
-    }
-
-    .flex-container div:nth-child(3) {
-     background-color: indigo; 
-     flex-grow: 2;
-     flex-shrink: 5;
-     /* order: -1; */
+      flex-basis: 100px;
     }
   </style>
 </head>
