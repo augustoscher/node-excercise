@@ -7,3 +7,7 @@
 #### webpack
 
 #### css
+Running:
+``` 
+ npm run start
+``` 
